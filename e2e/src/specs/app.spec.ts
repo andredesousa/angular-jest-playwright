@@ -6,7 +6,7 @@ const { describe, beforeEach } = test;
 describe('App', () => {
   let appPage: AppPage;
 
-  beforeEach(async ({ page }) => {
+  beforeEach(({ page }) => {
     appPage = new AppPage(page);
   });
 

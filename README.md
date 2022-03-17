@@ -1,6 +1,6 @@
 # Testing an Angular app with Playwright
 
-This project provides a baseline code base to help you kick start an Angular project with end-to-end tests
+This project provides a baseline code base to help you kick start an Angular project with end-to-end tests.
 It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13 and [Node.js](https://nodejs.org/en/about/releases) version 14.
 
 ## Available npm scripts
