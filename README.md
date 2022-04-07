@@ -2,6 +2,20 @@
 
 This project provides a baseline code base to help you kick start an Angular project with end-to-end tests.
 It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13 and [Node.js](https://nodejs.org/en/about/releases) version 14.
+This project uses [Jest](https://jestjs.io/) for unit testing and [Playwright](https://playwright.dev/) for end-to-end testing.
+
+## Overview
+
+End-to-end tests will allow you to trace bugs and errors in the behavior of your system.
+They are a means of testing if all units of an application interact as expected with each other and if the system as a whole works as intended.
+
+It is important to keep in mind that, maybe contrary to unit tests, e2e tests are black-box tests and only care about the functionality of the application from an end user point of view.
+Whether or not the services around the application work properly, or that responses from the server are correct, and so on, is outside the scope of e2e testing.
+
+Playwright is a framework for Web Testing and Automation.
+It allows testing Chromium, Firefox and WebKit with a single API.
+Playwright is built to enable cross-browser web automation that is ever-green, capable, reliable and fast.
+Headless execution is supported for all the browsers on all platforms.
 
 ## Available npm scripts
 
@@ -21,17 +35,14 @@ The next scripts should be executed in a console inside the root directory:
 
 For more details, read the [npm scripts](https://docs.npmjs.com/cli/v8/using-npm/scripts) documentation.
 
-## Development server
-
-Run `npm start` for a dev server. Navigate to <http://localhost:4200/>.
-The app will automatically reload if you change any of the source files.
-
 ## Linting and formatting code
 
 Linters are also excellent tools for finding certain classes of bugs, such as those related to variable scope.
 [ESLint](https://eslint.org/) helps maintain the code quality.
 
-Run `npm run lint` to analyze your code. Many problems can be automatically fixed with `npm run lint:fix`.
+Run `npm run lint` to analyze your code.
+Many problems can be automatically fixed with `npm run lint:fix`.
+
 Depending on your editor, you may want to add an editor extension to lint and format your code while you type or on-save.
 
 ## Running unit tests
