@@ -9,6 +9,7 @@ const config = require('./playwright.config');
 module.exports = {
   ...config,
   webServer: null,
+  workers: 1,
   use: {
     ...config.use,
     headless: false,

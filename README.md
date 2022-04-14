@@ -40,7 +40,7 @@ For more details, read the [npm scripts](https://docs.npmjs.com/cli/v8/using-npm
 Linters are also excellent tools for finding certain classes of bugs, such as those related to variable scope.
 [ESLint](https://eslint.org/) helps maintain the code quality.
 
-Run `npm run lint` to analyze your code.
+Use `npm run lint` to analyze your code.
 Many problems can be automatically fixed with `npm run lint:fix`.
 
 Depending on your editor, you may want to add an editor extension to lint and format your code while you type or on-save.
@@ -49,8 +49,8 @@ Depending on your editor, you may want to add an editor extension to lint and fo
 
 Unit tests are responsible for testing of individual methods or classes by supplying input and making sure the output is as expected.
 
-Run `npm run test` to execute the unit tests via [Jest](https://jestjs.io/).
-Run `npm run test:watch` to keep executing unit tests in real time while watching for file changes in the background.
+Use `npm run test` to execute the unit tests via [Jest](https://jestjs.io/).
+Use `npm run test:watch` to keep executing unit tests in real time while watching for file changes in the background.
 
 You can see the HTML coverage report opening the [index.html](build/coverage/lcov-report/index.html) file in your web browser.
 Code coverage measures and reports the number of executed code lines covered by automated tests.
@@ -61,7 +61,9 @@ The end-to-end tests are responsible for testing scenarios on the product itself
 
 Use `npm run e2e` to execute the end-to-end tests via [Playwright](https://playwright.dev/).
 Use `npm run e2e:watch` to keep executing your tests while watching for file changes in the background.
-You can see the HTML report opening the [index.html](reports/e2e/index.html) file in your web browser.
+
+You can see the HTML report opening the [index.html](build/e2e/index.html) file in your web browser.
+When tests fail, a screenshot is attached.
 
 ## Debugging
 
@@ -76,7 +78,7 @@ These functionalities are provided natively or based on plugins.
 
 ## Build
 
-Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Use `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Further help
 

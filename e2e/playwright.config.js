@@ -9,8 +9,9 @@ module.exports = {
     command: 'ng serve -c production',
     port: 4200,
     timeout: 120 * 1000,
-    reuseExistingServer: true
+    reuseExistingServer: true,
   },
+  workers: 4,
   use: {
     baseURL: 'http://localhost:4200/',
     browserName: 'chromium',
@@ -20,6 +21,13 @@ module.exports = {
     screenshot: 'only-on-failure',
     testDir: 'src/specs',
   },
-  workers: 4,
-  reporter: [['html', { open: 'never', outputFolder: 'build/e2e' }]],
+  reporter: [
+    [
+      'html',
+      {
+        open: 'never',
+        outputFolder: 'build/e2e',
+      },
+    ],
+  ],
 };
