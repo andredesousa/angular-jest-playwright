@@ -23,7 +23,7 @@ The scripts in [package.json](package.json) file were built with simplicity in m
 
 The next scripts should be executed in a console inside the root directory:
 
-- `start` - Runs Storybook in watch mode.
+- `start` - Runs the application.
 - `check` - Runs all checks.
 - `lint` - Runs several static code analysis.
 - `lint:fix` - Applies lint rules to source code.
